@@ -38,6 +38,8 @@ const FlexContainer = styled.div`
   display:flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  margin:0 10%;
+  color:white;
 `
 
 export default App;

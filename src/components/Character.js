@@ -30,8 +30,8 @@ export default function Character (props) {
 	return (
 		<StyledDiv>
 			<h2>{capitalize(name)}</h2>
-			<div>
-				{charInfo && <img src={charInfo.sprites.front_default} alt={name} />}
+			<div >
+				{charInfo && <img src={charInfo.sprites.front_default} alt={name} style={{backgroundColor: 'lightgrey'}}/>}
 			</div>
 			{expanded && <Details info={charInfo}></Details>}
 			<button onClick={() => displayDetails()}>See {expanded ? 'less' : 'more'}</button>
@@ -44,11 +44,12 @@ const StyledDiv = styled.div`
 	padding: 5px;
 	margin: 5px;
 	width: 150px;
+	background-color: #CC221c;
 	img {
 		border: 1px solid black;
 	}
 	h2 {
 		font-family: Arial, Helvetica, sans-serif;
-		color:black;
+		color:white;
 	}
 `
