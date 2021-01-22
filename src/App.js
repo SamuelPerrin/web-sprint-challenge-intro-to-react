@@ -15,7 +15,7 @@ const App = () => {
   // sync up with, if any.
   useEffect(() => {
     axios
-      .get('https://pokeapi.co/api/v2/pokemon?limit=50')
+      .get('https://pokeapi.co/api/v2/pokemon?limit=20')
       .then(res => {
         console.log(res.data.results);
         setCharacters(res.data.results);
